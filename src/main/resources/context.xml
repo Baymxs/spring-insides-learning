@@ -7,13 +7,13 @@
 
     <context:annotation-config/>
 
-    <bean class="ru.bayramov.terminatorqoter.quoters.annotations.deprecated.DeprecationHandlerBeanFactoryPostProcessor"/>
+    <bean class="ru.bayramov.terminatorqoter.annotations.deprecated.DeprecationHandlerBeanFactoryPostProcessor"/>
 
-    <bean class="ru.bayramov.terminatorqoter.quoters.annotations.postproxy.PostProxyInvokerContextListener"/>
+    <bean class="ru.bayramov.terminatorqoter.annotations.postproxy.PostProxyInvokerContextListener"/>
 
-    <bean class="ru.bayramov.terminatorqoter.quoters.annotations.profilling.ProfilingHandlerBeanPostProcessor"/>
+    <bean class="ru.bayramov.terminatorqoter.annotations.profilling.ProfilingHandlerBeanPostProcessor"/>
 
-    <bean class="ru.bayramov.terminatorqoter.quoters.annotations.injectrandomint.InjectRandomIntAnnotationBeanPostProcessor"/>
+    <bean class="ru.bayramov.terminatorqoter.annotations.injectrandomint.InjectRandomIntAnnotationBeanPostProcessor"/>
 
     <bean class="ru.bayramov.terminatorqoter.quoters.TerminatorQuoter" id="terminatorQuoter">
         <property name="message" value="I'll be back"/>
